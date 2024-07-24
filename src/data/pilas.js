@@ -6,13 +6,8 @@ const guardar = (dato) => {
     return true;
 };
 
-const imprimir = () => {
-    if (pila.length === 0) {
-        alert("La pila está vac+ia");
-    } else {
-        let elementos = pila.map((elem, index) => `Elemento ${index +1}: ${JSON.stringify(elem)}`).join(("\n"));
-        alert("Elementos en la pila:\n" + elementos);
-    }
+const obtenerElementos = () => {
+    return pila;
 };
 
-export {guardar,imprimir}
+export  {guardar,obtenerElementos};
